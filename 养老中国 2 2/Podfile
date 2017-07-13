@@ -1,0 +1,14 @@
+target '养老中国' do
+pod 'FMDB','~> 2.6.2'
+pod 'SDWebImage','~> 3.8.1'
+pod 'MJRefresh','~> 3.1.9'
+pod 'MJExtension','~> 3.0.10'
+pod 'AFNetworking','~> 3.1.0'
+pod 'IQKeyboardManager','~> 4.0.3'
+pod 'MBProgressHUD','~> 0.9.2'
+pod 'Base64nl','~> 1.2'
+pod 'Masonry','~> 1.0.1'
+pod 'ReactiveCocoa','2.5'
+pod 'FDFullscreenPopGesture','1.1'
+pod 'UITableView+FDTemplateLayoutCell'
+end

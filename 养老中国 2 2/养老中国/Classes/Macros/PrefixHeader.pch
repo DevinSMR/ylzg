@@ -1,0 +1,38 @@
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+#import "SXEasyMacro.h"
+#import "UIView+Frame.h"
+#import <MJRefresh/MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import <MJExtension/MJExtension.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "NTGMBProgressHUD.h"
+#import "MBProgressHUD.h"
+#import "NTGNetworkTool.h"
+#import "NTGSendRequest.h"
+#import "NTGBusinessResult.h"
+#import "NTGConstant.h"
+#import "NTGDetection.h"
+
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kDeviceVersion [[UIDevice currentDevice].systemVersion floatValue]
+#define WS(weakSelf) __weak __typeof(&*self)weakSelf = self;
+#define kNavbarHeight ((kDeviceVersion>=7.0)? 64 :44 )
+#define kIOS7DELTA   ((kDeviceVersion>=7.0)? 20 :0 )
+#define kTabBarHeight 49
+#ifdef DEBUG
+#define DDLog(...) NSLog(__VA_ARGS__)
+#else
+#define DDLog(...)
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
